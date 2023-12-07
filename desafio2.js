@@ -2,6 +2,7 @@ let victorys = 122
 let defeats = 22
 level(victorys, defeats)
 let results = elo
+let numberVictorys = victorys - defeats
 
 function level(numA, numB){
     let results = numA - numB
@@ -21,4 +22,4 @@ function level(numA, numB){
         elo = "Imortal"
         return results
 }
-console.log("O Herói tem saldo de " + results + " vitórias" + " e está no nivel de " + results)
+console.log("O Herói tem saldo de " + numberVictorys + " vitórias" + " e está no nivel de " + results)
